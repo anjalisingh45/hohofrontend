@@ -163,7 +163,7 @@ const EventLanding = () => {
         <div className={styles.eventImage}>
           {event.logoUrl ? (
             <img
-              src={`https://hohoindiabackend.onrender.com${event.logoUrl}`}
+              src={`https://hohobackend.onrender.com${event.logoUrl}`}
               alt={event.title || 'Event'}
               onError={e => {
                 e.target.style.display = 'none';
