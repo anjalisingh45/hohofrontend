@@ -224,7 +224,7 @@ const EventDetail = () => {
           <div className={styles.logoSection}>
             {currentEvent.logoUrl && (
               <img 
-                src={`https://hohoindiabackend.onrender.com${currentEvent.logoUrl}`} 
+                src={`https://hohobackend.onrender.com${currentEvent.logoUrl}`} 
                 alt={`${currentEvent.title} logo`} 
                 className={styles.eventLogo}
                 onError={e => e.target.style.display = 'none'}

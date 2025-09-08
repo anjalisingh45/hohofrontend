@@ -18,7 +18,7 @@ const EventLanding = () => {
     setLoading(true);
     setError('');
     try {
-      const response = await fetch('https://hohoindiabackend.onrender.com/api/events/public', {
+      const response = await fetch('https://hohobackend.onrender.com/api/events/public', {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
       });

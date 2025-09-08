@@ -27,7 +27,7 @@ const ClientRegistration = () => {
       console.log('Fetching event for registration:', eventId);
       
       // PUBLIC API call - no auth required (Production URL)
-      const response = await fetch(`https://hohoindiabackend.onrender.com/api/events/public/${eventId}`, {
+      const response = await fetch(`https://hohobackend.onrender.com/api/events/public/${eventId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ const ClientRegistration = () => {
 
     try {
       // PUBLIC registration call - no auth required (Production URL)
-      const response = await fetch(`https://hohoindiabackend.onrender.com/api/registrations/${eventId}`, {
+      const response = await fetch(`https://hohobackend.onrender.com/api/registrations/${eventId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
