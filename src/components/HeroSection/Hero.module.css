@@ -1,0 +1,80 @@
+.heroSection {
+    background-color: #f9fafb;
+    padding: 6rem 0;
+}
+
+.heroWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.heroContent {
+    text-align: center;
+    max-width: 600px;
+}
+
+.heroTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #111827;
+}
+
+.gradientText {
+    background: linear-gradient(to right, #2563eb, #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heroDescription {
+    font-size: 1.125rem;
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+}
+
+.heroBtn {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.heroBtn:hover {
+    background-color: #1e40af;
+}
+
+.heroImageBox {
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.heroImage {
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .heroWrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .heroContent {
+        text-align: left;
+        width: 50%;
+    }
+
+    .heroImageBox {
+        width: 50%;
+    }
+}

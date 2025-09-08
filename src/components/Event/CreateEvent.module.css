@@ -1,0 +1,175 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+}
+
+.form {
+  background: #fff;
+  padding: 3rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.form:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.form h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.inputGroup {
+  margin-bottom: 2rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: #34495e;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid #d1d9e6;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #34495e;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputGroup input::placeholder,
+.inputGroup textarea::placeholder {
+  color: #a3a9b2;
+  font-style: italic;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.8rem;
+}
+
+.datePicker {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  border: 1.5px solid #d1d9e6;
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.cancelBtn,
+.submitBtn {
+  padding: 0.85rem 2.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cancelBtn {
+  background-color: #7f8c8d;
+  color: #fff;
+}
+
+.cancelBtn:hover {
+  background-color: #636e72;
+  box-shadow: 0 4px 12px rgba(99, 110, 114, 0.4);
+}
+
+.submitBtn {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background-color: #229954;
+  box-shadow: 0 6px 16px rgba(34, 153, 84, 0.5);
+}
+
+.submitBtn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.error {
+  background-color: #ffebeb;
+  color: #c0392b;
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(192, 57, 43, 0.25);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .form {
+    padding: 2rem;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cancelBtn,
+  .submitBtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .inputGroup label {
+    font-size: 1rem;
+  }
+
+  .inputGroup input,
+  .inputGroup textarea,
+  .datePicker {
+    font-size: 0.95rem;
+    padding: 0.7rem 0.9rem;
+  }
+}

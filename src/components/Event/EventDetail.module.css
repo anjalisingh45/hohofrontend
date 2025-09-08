@@ -1,0 +1,414 @@
+/* ────── Container ────── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ────── Event Header ────── */
+.eventHeader {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.headerContent {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.logoSection {
+  display: flex;
+  justify-content: center;
+}
+
+.eventLogo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;     
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: block;        
+  margin: 0 auto;          
+}
+
+.eventInfo h1 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.eventMeta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.eventMeta p {
+  margin: 0.5rem 0;
+  color: #34495e;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+/* ────── Description ────── */
+.eventDescription {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.eventDescription h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.eventDescription p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* ────── Speakers Section ────── */
+.speakersSection {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.speakersSection h3 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 0.5rem;
+}
+
+.speakersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.speakerCard {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fafafa;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.speakerCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.speakerPhoto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+  flex-shrink: 0;
+}
+
+.speakerPhotoPlaceholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 3px solid #3498db;
+  flex-shrink: 0;
+}
+
+.speakerInfo {
+  flex: 1;
+}
+
+.speakerInfo h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.speakerInfo p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* ────── QR Section ────── */
+.qrSection {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.qrSection h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #27ae60;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.qrContainer {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px dashed #dee2e6;
+}
+
+.qrActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.qrActionBtn {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qrActionBtn:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+}
+
+.qrActionBtn:active {
+  transform: translateY(0);
+}
+
+.qrSection p {
+  color: #666;
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* ────── Registrations Section ────── */
+.registrationsSection {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.registrationsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.registrationsHeader h3 {
+  color: #2c3e50;
+  margin: 0;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 0.5rem;
+}
+
+.exportBtn {
+  background: linear-gradient(135deg, #27ae60, #229954);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.exportBtn:hover {
+  background: linear-gradient(135deg, #229954, #1e8449);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
+}
+
+/* ────── Table ────── */
+.registrationsTable {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.registrationsTable table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.registrationsTable th,
+.registrationsTable td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.registrationsTable th {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  color: #2c3e50;
+  font-weight: 600;
+  border-bottom: 2px solid #3498db;
+}
+
+.registrationsTable tr:hover {
+  background-color: #f1f8ff;
+}
+
+.registrationsTable td:first-child {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* ────── No Registrations ────── */
+.noRegistrations {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #7f8c8d;
+}
+
+.noRegistrations p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ────── Loading & Error ────── */
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.loading {
+  color: #3498db;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+/* ────── Responsive ────── */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .headerContent {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .eventLogo {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .eventInfo h1 {
+    font-size: 1.5rem;
+  }
+  
+  .eventMeta {
+    grid-template-columns: 1fr;
+  }
+  
+  .speakersGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .speakerCard {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .registrationsHeader {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .qrActions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .qrActionBtn {
+    width: 200px;
+    justify-content: center;
+  }
+  
+  .eventHeader,
+  .eventDescription,
+  .speakersSection,
+  .qrSection,
+  .registrationsSection {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+  
+  .registrationsTable {
+    font-size: 0.85rem;
+  }
+  
+  .registrationsTable th,
+  .registrationsTable td {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .qrContainer {
+    padding: 1rem;
+  }
+  
+  .qrActionBtn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
